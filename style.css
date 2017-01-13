@@ -1,0 +1,888 @@
+
+
+#main {
+  display: none;
+}
+
+body
+{
+    margin: 0px;
+    min-width: 425px;
+    width: 100%;
+    }
+
+
+
+h6 {
+    font-family: Garamond, Times, serif;
+    color: rgba(0,20,70,0.7);
+    /*background-color: rgba(90,10,90,.1);*/
+    text-align: center;
+    margin: 0px;
+    width: 100%;
+}
+
+.navigation-left{
+    width: 80%;
+    position: absolute;
+    top: 100px;
+    left: 4%;
+    }
+
+h1 {
+    font-family: Garamond, Times, serif;
+    color: black;
+    font-size: 17px;
+    letter-spacing: 0.12em;
+    font-weight: bold;
+    width: 200px;
+    margin: 0;
+    display: inline-block;
+    opacity: 0.75;
+    }
+
+.navigation-left img {
+    opacity: 0.75;
+    display: inline-block;
+    position: relative;
+    top:-18px;
+    }
+
+.lmain
+{
+    width: 80%;
+    position: relative;
+    top: 200px;
+    height: 500px;
+    margin: 10%;
+    padding: 0px;
+    z-index: 1001;
+    }
+
+.lmain h3 {
+    text-transform: uppercase;
+    font-family:Montserrat,Arial,sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+    color:white;
+    width: 100%;
+    left: -5%;
+    top: -50px;
+    position: relative;
+    text-align: left;
+    display: inline;
+    }
+
+#best {
+  color:#1d7871;
+}
+
+.lmain h2 {
+  position: relative;
+  border-style: hidden hidden solid hidden;
+  border-width: 3px;
+  border-color: #1d7871;
+  width: 200px;
+  top: -60px;
+  left: -4.5%;
+}
+
+.lmain p{
+    font-size: 19px;
+    color: rgba(255,255,255,1.0);
+    width: 400px;
+    left: -4.5%;
+    position: relative;
+    top: -50px;
+    font-family: serif;
+    text-align: left;
+    letter-spacing: .02em;
+    line-height: 1.5em;
+    }
+@media screen and (min-width: 650px) {
+      .lmain p {font-size: 22px ;}
+      .lmain h3 {font-size: 56px;}
+      .lmain p {width: 600px;}
+    }
+.lmain li {
+  display: inline-block;
+  background-color: #1d7871;
+  color: white;
+  font: Arial;
+  text-align: center;
+  padding-top: 10px;
+  width: 180px;
+  height: 40px;
+  font-weight: bold;
+  font-size: 14px;
+  position: relative;
+  margin-right: 30px;
+  left: -12%;
+  top: -35px;
+}
+.lmain ul{
+  width: 500px;
+}
+
+#white {
+  width: 140px;
+  background-color: white;
+  color: #1d7871;
+}
+
+@media screen and (max-width: 450px) {
+      .lmain {
+        top: 150px;
+        }
+    }
+
+.navigation {
+  background-color: rgba(255, 255, 255, 1);
+  height: auto;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 3000;
+  width: 100%;
+  border-bottom: 1px outset rgba(0, 0, 0, 0.5);
+  /*background-image: -webkit-linear-gradient(#FFD194, #BC1324);*/
+}
+
+.navigation ul {
+  padding-top: 0;
+  margin: 0px;
+}
+
+.navigation li {
+  color: #666666;
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  margin: 10px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  padding: 2px;
+  position: relative;
+}
+
+.navigation li:hover {
+  background-color:#1d7880;
+  opacity: 0.7;
+  color: white;
+  animation: ease;
+}
+
+.navigation li:active {
+  top: 1px;
+
+}
+
+
+.slide-viewer {
+      position: absolute; /* needed for IE7 */
+      overflow: hidden;
+      height: 600px;
+      width: 100%;
+      top: 40px;
+      z-index: -2;
+    }
+
+.slide-group {
+      width: 100%;
+      height: 600px;
+      position: fixed;
+      z-index: -2;
+
+    }
+
+.slide {
+      width: 100%;
+      height: 600px;
+      display: none;
+      position: absolute;
+      z-index: -2;
+  }
+.slide img {
+    min-width: 700px;
+    width: 100%;
+    height: 600px;
+    z-index: -2;
+
+}
+
+.slide:first-child {
+      display: block;}
+
+
+  /********** BUTTONS **********/
+.slide-buttons {
+    text-align: center;
+    position: relative;
+    top: 610px;
+    outline: none;
+    z-index: 2000;}
+
+.slide-btn {
+    border: none;
+    background: none;
+    color: #000;
+    font-size: 200%;
+    line-height: 0.5em;
+    outline: none;}
+
+.lmain li:hover {
+  opacity: 0.90;
+}
+
+.slide-btn.active, .slide-btn:hover {
+    color: #ddd;
+    cursor: pointer;
+    outline: none;}
+
+    .container {
+      width: 520px;
+      margin-top: 20px;
+    }
+
+    .button-group {
+      margin-bottom: 20px;
+    }
+
+    .counter {
+      display: inline;
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-right: 10px;
+    }
+
+    .posts {
+      clear: both;
+      list-style: none;
+      padding-left: 0;
+      width: 100%;
+    }
+
+    .posts li {
+      background-color: #fff;
+      border: 1px solid #d8d8d8;
+      padding-top: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      word-wrap: break-word;
+      min-height: 42px;
+    }
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+#main {
+    transition: margin-left .5s;
+    padding-left: 16px;
+    z-index: -25;
+}
+
+#example, .navigation-left, .lmain {
+  transition: margin-left .5s;
+}
+
+@media screen and (max-width: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+  .navigation {display: none;}
+  #main {display: inline;}
+  .slide-buttons{
+    top: 568px
+  }
+}
+
+.Shah {
+  position: absolute;
+  top: 640px;
+  width: 100%;
+  height: 500px;
+  background-image: url('http://changeactivation.com/wp-content/uploads/2013/11/blurry-walking-around-office-really-blurry.jpg');
+  z-index: 2;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.Shah h1{
+      font-size: 22px;
+      color: rgba(0,0,0,1.0);
+      width: 400px;
+      left: 6.5%;
+      position: relative;
+      top: 100px;
+      font-family: serif;
+      text-align: left;
+      letter-spacing: .03em;
+      line-height: 1.5em;
+      font-weight: 200;
+}
+
+.Shah h2 {
+  position: relative;
+  border-style: hidden hidden solid hidden;
+  border-width: 2px;
+  border-color: #8B814C;
+  width: 75px;
+  top: 90px;
+  left: 6.5%;
+}
+
+#our
+{
+  text-transform: uppercase;
+  font-family:Montserrat,Arial,sans-serif;
+  font-weight:bold;
+  font-size: 60px;
+  color:black;
+  width: 80%;
+  left: 6.5%;
+  position: relative;
+  text-align: left;
+}
+
+#team
+{
+  text-transform: uppercase;
+  font-family: Montserrat,Arial,sans-serif;
+  font-weight:bold;
+  font-size: 60px;
+  width: 50%;
+  top: 10px;
+  margin-left: 150px;
+  position: relative;
+  text-align: left;
+  color: #1d7871;
+}
+
+.Shah p {
+  position: relative;
+  left: 6.5%;
+  top: 20px;
+  width: 500px;
+  font-size: 19px;
+  font-family: serif;
+  text-align: left;
+  letter-spacing: .02em;
+  line-height: 1.5em;
+      }
+.Shah img{
+    position: relative;
+    top: -300px;
+    margin-left: 600px;
+  }
+
+.rest{
+  position: absolute;
+  top: 1140px;
+  width: 100%;
+  height: 600px;
+  z-index: 2;
+  background-color: #1d7871;
+  opacity: 0.975;
+}
+
+.ch-grid2 {
+  margin-left: 20%;
+	padding: 50px;
+	list-style: none;
+	display: block;
+	text-align: center;
+	width: 100%;
+  border-style: solid;
+}
+
+#block3 {
+  position: relative;
+  top: -85px;
+}
+
+
+
+.rest li {
+  position: relative;
+  top: 15px;
+  display: inline-block;
+  min-width: 24%;
+	height: 550px;
+  margin: 4%;
+}
+
+.ch-grid2:after,
+.block:before {
+	content: '';
+    display: table;
+}
+
+.ch-grid2:after {
+	clear: both;
+}
+
+
+.block{
+  width: 250px;
+  height: 500px;
+  background-color: white;
+	padding: 0;
+}
+
+.block h2{
+  font-size: 14px;
+  font-family: serif;
+  margin-left: 15px;
+}
+
+.block h1{
+  position: relative;
+  top: 5px;
+  font-size: 24px;
+  font-family: Montserrat,Arial,sans-serif;
+  margin-left: 15px;
+  font-weight: 600;
+  color: #1d7871;
+  letter-spacing: .02em;
+
+}
+
+.block p{
+  font-size: 16px;
+  font-family: serif;
+  font-style: italic;
+  margin-left: 15px;
+  position: relative;
+  top: 20px;
+  width: 175px;
+}
+
+
+.Services{
+  position: absolute;
+  width: 100%;
+  height: 950px;
+  top: 1740px;
+  background-color: rgba(255,255,255, 0.975);
+  opacity: 1;
+}
+
+.Title{
+  text-align: center;
+  opacity: 1;
+}
+
+.Title h1{
+  font-size: 20px;
+  font-family: serif;
+  width: 400px;
+  position: relative;
+  top: 80px;
+  letter-spacing: .02em;
+  font-weight: 300;
+  color: black;
+  opacity: 1;
+}
+
+.Title h2{
+  position: relative;
+  border-style: hidden hidden solid hidden;
+  border-width: 2px;
+  border-color: #8B814C;
+  width: 60px;
+  top: 90px;
+  margin: auto;
+}
+
+.Title #team {
+  top: 50px;
+  left: 20px;
+
+}
+
+.Title #our {
+  position: relative;
+  top: 116px;
+
+}
+
+.services1 {
+  width: 700px;
+  margin: auto;
+  position: relative;
+  top: -20px;
+
+}
+
+.Title p{
+  font-size: 20px;
+  font-family: serif;
+  width: 80%;
+  left: 10%;
+  position: relative;
+  top: 50px;
+  letter-spacing: .02em;
+  font-weight: 300;
+  color: black;
+  opacity: 1;
+}
+
+.ch-grid {
+	margin: 20px 0 0 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+
+.ch-grid:after,
+.ch-item:before {
+	content: '';
+    display: table;
+}
+
+.ch-grid:after {
+	clear: both;
+}
+
+.ch-grid li {
+	width: 220px;
+	height: 220px;
+	display: inline-block;
+	margin: 20px;
+}
+
+
+.ch-item {
+	width: 100%;
+	height: 100%;
+	border-radius: 0;
+	position: relative;
+  top: 50px;
+	cursor: default;
+
+
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+
+.serim1 {
+	background-image: url('http://weneedfun.com/wp-content/uploads/2016/09/Peace-Nature-Wallpapers-6.jpg');
+  background-size: 350px;
+  background-position: 45%;)
+}
+
+.serim2 {
+	background-image: url('http://lifepopper.com/wp-content/uploads/2014/09/amazing-photography-beautiful-unique-nature-love-peace-creativity-14.jpg');
+  background-size: 360px;
+  background-position: 45%;
+
+}
+
+.serim2 h3, .serim5 h3, .serim7 h3, .serim8 h3{
+  position: relative;
+  top: 20px;
+}
+
+.serim3 {
+	background-image: url('http://weneedfun.com/wp-content/uploads/2016/09/Peace-Nature-Wallpapers-35.jpg');
+  background-size: 490px;
+  background-position: 45%;
+}
+
+.serim4 {
+	background-image: url('http://static.snopes.com/wordpress/wp-content/uploads/2016/04/mountain-rang.png');
+  background-size: 490px;
+  background-position: 45%;
+}
+
+.serim5 {
+	background-image: url('http://s3.favim.com/orig/46/amazing-bautiful-nature-red-Favim.com-421665.jpg');
+  background-size: 490px;
+  background-position: 45%;
+}
+
+.serim6 {
+	background-image: url('http://www.wall321.com/thumbnails/detail/20121118/nature%20trees%20red%20vintage%20contrast%20photomanipulations%20scene%201920x1080%20wallpaper_www.wall321.com_26.jpg');
+  background-size: 490px;
+  background-position: 45%;
+}
+
+.serim7 {
+	background-image: url('http://weneedfun.com/wp-content/uploads/2016/09/Peace-Nature-Wallpapers-6.jpg');
+  background-size: 350px;
+  background-position: 45%;)
+}
+
+.serim8 {
+	background-image: url('http://lifepopper.com/wp-content/uploads/2014/09/amazing-photography-beautiful-unique-nature-love-peace-creativity-14.jpg');
+  background-size: 360px;
+  background-position: 45%;
+}
+
+.ch-info {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	opacity: 0;
+
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-o-transform: scale(0);
+	-ms-transform: scale(0);
+	transform: scale(0);
+
+	-webkit-backface-visibility: hidden; /*for a smooth font */
+
+}
+
+.ch-info h3 {
+	color: #fff;
+	text-transform: uppercase;
+	position: relative;
+	letter-spacing: 2px;
+	font-size: 20px;
+	margin: 45px 30px 10px 30px;
+	padding: 0 0 0 0;
+	height: 60px;
+	font-family: 'Open Sans', Arial, sans-serif;
+	text-shadow:
+		0 0 1px #fff,
+		0 1px 2px rgba(0,0,0,0.3);
+}
+
+.ch-info p {
+	color: #fff;
+	padding: 10px 5px;
+	font-style: italic;
+	margin: 0 30px;
+	font-size: 12px;
+	border-top: 1px solid rgba(255,255,255,0.5);
+}
+
+.ch-info p a {
+	display: block;
+	color: #fff;
+	color: rgba(255,255,255,0.7);
+	font-style: normal;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 9px;
+	letter-spacing: 1px;
+	padding-top: 4px;
+	font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.ch-info p a:hover {
+	color: #fff222;
+	color: rgba(255,242,34, 0.8);
+}
+
+.ch-item:hover {
+	box-shadow:
+		inset 0 0 0 120px rgba(19,110,103, 0.55),
+		inset 0 0 0 16px rgba(29,120,113,0.8),
+		0 1px 2px rgba(0,0,0,0.1);
+}
+
+.ch-item:hover .ch-info {
+	opacity: 1;
+
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+}
+
+.ch-item:hover .steps {
+  opacity: 0;
+
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-o-transform: scale(0);
+	-ms-transform: scale(0);
+	transform: scale(0);
+}
+
+.Process{
+  position: absolute;
+  width: 100%;
+  height: 550px;
+  top: 2690px;
+  background-color: rgba(29,120,113, 0.95);
+}
+
+.t2 #our{
+  color: white;
+  position: relative;
+  top: 75px;
+  width: 600px;
+  padding-left: 25px;
+  margin: auto;
+}
+
+.t2 h2 {
+  position: relative;
+  border-style: hidden hidden solid hidden;
+  border-width: 2px;
+  border-color: white;
+  width: 200px;
+  top: 90px;
+  margin: auto;
+}
+
+.t2 p {
+  color: white;
+  position: relative;
+  top: 125px;
+}
+
+.I2 {
+  position: relative;
+  top: 100px;
+}
+
+.smaller li {
+	width: 225px;
+	height: 225px;
+	display: inline-block;
+	margin: 15px;
+  margin-bottom: 50px;
+}
+
+
+.p2 {
+	background-image: url('http://www.iconsdb.com/icons/preview/white/phone-2-xxl.png');
+  background-size: 100px;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  background-position: center;
+  opacity: 0.95;
+}
+
+.p1 {
+	background-image: url('http://nathandeanagency.com/files/icon-life.png');
+  background-size: 125px;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  background-position: center;
+  opacity: 0.95;
+}
+
+.p3 {
+	background-image: url('http://goldsgymlethbridge.com/wp-content/uploads/2016/08/calendar.png');
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  opacity: 0.95;
+}
+
+.p4 {
+	background-image: url('http://siteassets.pagecloud.com/fitci/images/Cara_Franhisee_application_icon_-_white-ID-e4601ad3-a593-4622-9e2a-7dbf529f513d.png?nocache=1888c43a-5a46-4022-93b6-b05bd7fee4ed');
+  background-size: 100px;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  background-position: center;
+  opacity: 0.95;
+}
+
+.steps {
+  position: absolute;
+  color: white;
+  opacity: 1;
+  font-size: 20px;
+  font-family: Montserrat,Arial, sans-serif;
+  letter-spacing: .02em;
+  font-weight: bold;
+  top: 25px;
+  width: 220px;
+	height: 220px;
+  left: 10px;
+  cursor: default;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+
+}
+
+.Contact {
+  position: absolute;
+  top: 2740px;
+  width: 100%;
+}
+
+.contact-background{
+  position: absolute;
+  top: 500px;
+  width: 100%;
+  height: 500px;
+  background-image: url('http://changeactivation.com/wp-content/uploads/2013/11/blurry-walking-around-office-really-blurry.jpg');
+  z-index: 6;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contact-background h1{
+  position: relative;
+  display: block;
+  top: 70px;
+  width: 410px;
+  margin: auto;
+  color: #1d7871;
+  opacity: 1;
+  font-size: 60px;
+  font-family: Montserrat,Arial, sans-serif;
+  letter-spacing: .02em;
+  font-weight: bold;
+}
