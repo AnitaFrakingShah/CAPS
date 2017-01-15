@@ -5,37 +5,43 @@
 <head>
   <script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
   <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp2/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
 	<script src='script.js'></script>
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,500,700|Oswald:300,400,700" rel="stylesheet">
 	<link rel='stylesheet' href='style.css' type="text/css"/>
-
 </head>
-
 
 <body>
 
     <div class="navigation">
         <div id="navigation-text">
+           <div id="shownews">
+             <h1>This is the news</h1>
+             <p>Please look at these articles for group next week</p>
+           </div>
             <ul>
-                <a href = ""><li>Welcome</li></a>
-                <a href = ""><li>About Us</li></a>
-                <a href = ""><li>Services</li></a>
-                <a href = ""><li>News</li></a>
-                <a href = ""><li>FAQ</li></a>
-                <a href = ""><li>Contact</li></a>
+                <a href = "#welcome"><li>Welcome</li></a>
+                <a href = "#about"><li>About Us</li></a>
+                <a href = "#service"><li>Services</li></a>
+                <li id= "news">News</li>
+                <a href = "#process"><li>FAQ</li></a>
+                <a href = "#contact"><li>Contact</li></a>
             </ul>
         </div>
     </div>
 
+
+
+
+
     <div id = 'mySidenav' class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href = "">Welcome</a>
-                <a href = "">About Us</a>
-                <a href = "">Services</a>
-                <a href = "">News</a>
-                <a href = "">FAQ</a>
-                <a href = "">Contact</a>
+                <a href = "#welcome">Welcome</a>
+                <a href = "#about">About Us</a>
+                <a href = "#service">Services</a>
+                <a href = "#process">FAQ</a>
+                <a href = "#contact">Contact</a>
 
 
     </div>
@@ -45,7 +51,7 @@
 
 <section>
 
-<div class = "slider" id = 'example'>
+<a name="welcome"><div class = "slider" id = 'example'></a>
     <div class = "slide-viewer">
       <div class = "slide-group">
         <div class="slide slide-1">
@@ -85,7 +91,7 @@
         </ul>
     </div>
 
-    <div class="AboutUs" id = "bout">
+    <a name="about"><div class="AboutUs" id = "bout"></a>
       <div class='Shah'>
         <h1>Dr. Arvind Shah</h1>
         <h2></h2>
@@ -129,7 +135,7 @@
        </div>
      </div>
 
-   <div class= 'Services'>
+   <a name="service"><div class= 'Services'></a>
      <div class='Title'>
        <h1>How can we help?</h1>
        <h2></h2>
@@ -209,7 +215,7 @@
    </div>
  </div>
 
- <div class= 'Services Process'>
+ <a name ="process"><div class= 'Services Process'></a>
    <div class='Title t2'>
      <h1 id="our">OUR PROCESS</h1>
      <h2></h2>
@@ -257,10 +263,90 @@
  </div>
 </div>
 
-<div class="Contact" id = "contact_bout">
+
+<div class="ch-item ch-img-1">
+		<div class="ch-info-wrap">
+			<div class="ch-info">
+				<div class="ch-info-front ch-img-1"></div>
+				<div class="ch-info-back">
+					<h3>Bears Type</h3>
+					<p>by Josh Schott <a href="http://drbl.in/ewUW">View on Dribbble</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<a name="contact"><div class="Contact" id = "contact_bout"></a>
   <div class='contact-background'>
+    <p id= "contact_title">Want to schedule an appointment?</p>
     <h1>CONTACT US</h1>
     <h2></h2>
+    <div class= "chz-item chz-img-1">
+      <div class="chz-info-wrap">
+        <div class="chz-info">
+         <div class ="leftcontact chz-info-front chz-img-1">
+      <h3>WORKING HOURS</h1>
+      <p>MON&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp8:00AM-7:00PM</p>
+      <p>TUES&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp8:00AM-7:00PM</p>
+      <p>WED&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp8:00AM-7:00PM</p>
+      <p>THU&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp8:00AM-7:00PM</p>
+      <p>FRI&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp8:00AM-7:00PM</p>
+      <p>SAT&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp8:00AM-7:00PM</p>
+      <p>SUN&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCLOSED</p>
+      <h3 id ="lower">CONTACT DETAILS</h1>
+      <ul class= "list">
+        <li><img src="http://www.rkfurn.com/images/ph-icon.png" width= 25px, height= 25px></li>
+        <li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1-203-755-9300</li>
+      </ul>
+      <ul class= "list">
+        <li><img src="http://zochrot.org/images/printer.png" width= 25px, height= 25px></li>
+        <li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1-203-755-9300</li>
+      </ul>
+      <ul class= "list" id="concentrate">
+        <li><img src="http://www.newdesignfile.com/postpic/2009/08/appointment-icon-transparent-white_210569.png" width= 25px, height= 25px></li>
+        <li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspBook Appointment</li>
+      </ul>
+    </div>
+    <div class="chz-info-back">
+      <div class = "lefthours">
+      <h3>Dr. Shah's Hours</h3>
+      <p>MON&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp8:00AM-7:00PM</p>
+      <p>TUES&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp8:00AM-7:00PM</p>
+      <p>WED&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp8:00AM-7:00PM</p>
+      <p>THU&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp8:00AM-7:00PM</p>
+      <p>FRI&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp8:00AM-7:00PM</p>
+      <p>SAT&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp8:00AM-7:00PM</p>
+      <h3>Bob Neild's Hours</h3>
+      <p>MON&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp8:00AM-7:00PM</p>
+      <p>TUES&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp8:00AM-7:00PM</p>
+      <p>WED&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp8:00AM-7:00PM</p>
+      <p>THU&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp8:00AM-7:00PM</p>
+      <p>FRI&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp8:00AM-7:00PM</p>
+      <p>SAT&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp8:00AM-7:00PM</p>
+</div>
+<div class = "righthours">
+      <h3>John Renzulli's Hours</h3>
+      <p>MON&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp8:00AM-7:00PM</p>
+      <p>TUES&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp8:00AM-7:00PM</p>
+      <p>WED&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp8:00AM-7:00PM</p>
+      <p>THU&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp8:00AM-7:00PM</p>
+      <p>FRI&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp8:00AM-7:00PM</p>
+      <p>SAT&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp8:00AM-7:00PM</p>
+      <h3>Amy Carlson's Hours</h3>
+      <p>MON&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp8:00AM-7:00PM</p>
+      <p>TUES&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp8:00AM-7:00PM</p>
+      <p>WED&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp8:00AM-7:00PM</p>
+      <p>THU&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp8:00AM-7:00PM</p>
+      <p>FRI&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp8:00AM-7:00PM</p>
+      <p>SAT&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp8:00AM-7:00PM</p>
+   </div>
+ </div>
+  </div>
+</div>
+</div>
+    <div class= "rightcontact">
+      <iframe style="pointer-events:none;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1493.0299059643312!2d-73.0569889433053!3d41.54630217924979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e7c1bb97df3345%3A0xd6d5da32380df4be!2sChild+%26+Adult+Psychiatric+Services!5e0!3m2!1sen!2sca!4v1484372780868" width= "600" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
   </div>
 </div>
 
@@ -286,8 +372,16 @@
         document.getElementById('navigation-left').style.marginLeft = "0";
         document.getElementById('l').style.marginLeft = "10%";
     }
-
     </script>
+    <script>
+      $(document).ready(function(){
+          $("#news").click(function(){
+            $("#shownews").toggle();
+          });
+        });
+    </script>
+
 
 </body>
 </html>
+
