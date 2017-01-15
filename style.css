@@ -106,7 +106,7 @@ h1 {
   display: inline-block;
   background-color: #1d7871;
   color: white;
-  font: Arial;
+  font-family: Arial, sans-serif;
   text-align: center;
   padding-top: 10px;
   width: 180px;
