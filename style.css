@@ -33,7 +33,7 @@ h1 {
     font-family: Garamond, Times, serif;
     color: black;
     font-size: 17px;
-    letter-spacing: 0.12em;
+    letter-spacing: 12%;
     font-weight: bold;
     width: 200px;
     margin: 0;
@@ -98,8 +98,8 @@ h1 {
     top: -50px;
     font-family: serif;
     text-align: left;
-    letter-spacing: .02em;
-    line-height: 1.5em;
+    letter-spacing: 2%;
+    line-height: 150%;
     }
 
 .lmain li {
@@ -229,7 +229,7 @@ h1 {
     background: none;
     color: #000;
     font-size: 100%;
-    line-height: 0.5em;
+    line-height: 50%;
     outline: none;}
 
 .lmain li:hover {
@@ -342,8 +342,8 @@ h1 {
       top: 100px;
       font-family: serif;
       text-align: left;
-      letter-spacing: .03em;
-      line-height: 1.5em;
+      letter-spacing: 3%;
+      line-height: 150%;
       font-weight: 200;
 }
 
@@ -392,8 +392,8 @@ h1 {
   font-size: 19px;
   font-family: serif;
   text-align: left;
-  letter-spacing: .02em;
-  line-height: 2em;
+  letter-spacing: 2%;
+  line-height: 200%;
       }
 .Shah img{
     position: relative;
@@ -470,7 +470,7 @@ h1 {
   margin-left: 15px;
   font-weight: 600;
   color: #1d7871;
-  letter-spacing: .02em;
+  letter-spacing: 2%em;
 
 }
 
@@ -505,7 +505,7 @@ h1 {
   width: 400px;
   position: relative;
   top: 80px;
-  letter-spacing: .02em;
+  letter-spacing: 2%;
   font-weight: 300;
   color: black;
   opacity: 1;
@@ -548,7 +548,7 @@ h1 {
   left: 10%;
   position: relative;
   top: 50px;
-  letter-spacing: .02em;
+  letter-spacing: 2%;
   font-weight: 300;
   color: black;
   opacity: 1;
@@ -832,7 +832,7 @@ h1 {
   opacity: 1;
   font-size: 20px;
   font-family: Arial, sans-serif;
-  letter-spacing: .02em;
+  letter-spacing: 2%;
   font-weight: bold;
   top: 25px;
   width: 220px;
@@ -875,7 +875,7 @@ h1 {
   opacity: 1;
   font-size: 60px;
   font-family: Arial, sans-serif;
-  letter-spacing: .02em;
+  letter-spacing: 2%;
   font-weight: bold;
 }
 
@@ -911,7 +911,7 @@ h1 {
   color: white;
   font-size: 28px;
   font-family: Arial, sans-serif;
-  letter-spacing: .02em;
+  letter-spacing: 2%;
   font-weight: bold;
   position: relative;
   top: 40px;
@@ -923,7 +923,7 @@ h1 {
   position: relative;
   top: 60px;
   text-align: center;
-  letter-spacing: .02em;
+  letter-spacing: 2%;
   font-weight: 300;
   color: black;
   opacity: 1;
@@ -937,7 +937,7 @@ h1 {
   color: white;
   font-size: 12px;
   font-family: Arial, sans-serif;
-  letter-spacing: .05em;
+  letter-spacing: 5%;
   width: 190px;
   height: 40px;
   padding-top: 15px;
@@ -955,7 +955,7 @@ h1 {
   color: white;
   font-size: 14px;
   font-family: Arial, sans-serif;
-  letter-spacing: .05em;
+  letter-spacing: 5%;
 }
 #lower {
   position: relative;
@@ -1021,7 +1021,7 @@ h1 {
   color: white;
   font-size: 18px;
   font-family: Arial, sans-serif;
-  letter-spacing: .02em;
+  letter-spacing: 2%;
   font-weight: bold;
   position: relative;
   top: 0px;
@@ -1036,7 +1036,7 @@ h1 {
   color: white;
   font-size: 9px;
   font-family: Arial, sans-serif;
-  letter-spacing: .05em;
+  letter-spacing: 5%;
   width: 95%;
   margin-left: 2.5%;
   height: 20px;
