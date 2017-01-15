@@ -910,7 +910,7 @@ h1 {
   text-align: center;
   color: white;
   font-size: 28px;
-  font-family: inherit;
+  font-family: Arial, sans-serif;
   letter-spacing: .02em;
   font-weight: bold;
   position: relative;
@@ -936,7 +936,7 @@ h1 {
   margin: auto;
   color: white;
   font-size: 12px;
-  font-family: inherit;
+  font-family: Arial, sans-serif;
   letter-spacing: .05em;
   width: 190px;
   height: 40px;
@@ -954,7 +954,7 @@ h1 {
   display: inline-block;
   color: white;
   font-size: 14px;
-  font-family: inherit;
+  font-family: Arial, sans-serif;
   letter-spacing: .05em;
 }
 #lower {
@@ -1020,7 +1020,7 @@ h1 {
 .chz-info-back h3 {
   color: white;
   font-size: 18px;
-  font-family: inherit;
+  font-family: Arial, sans-serif;
   letter-spacing: .02em;
   font-weight: bold;
   position: relative;
@@ -1035,7 +1035,7 @@ h1 {
   top: 00px;
   color: white;
   font-size: 9px;
-  font-family: inherit;
+  font-family: Arial, sans-serif;
   letter-spacing: .05em;
   width: 95%;
   margin-left: 2.5%;
