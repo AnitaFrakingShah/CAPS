@@ -59,6 +59,8 @@ h1 {
     z-index: 1001;
     }
 
+
+
 .lmain h3 {
     text-transform: uppercase;
     font-family:Montserrat,Arial,sans-serif;
@@ -99,11 +101,7 @@ h1 {
     letter-spacing: .02em;
     line-height: 1.5em;
     }
-@media screen and (min-width: 650px) {
-      .lmain p {font-size: 22px ;}
-      .lmain h3 {font-size: 56px;}
-      .lmain p {width: 600px;}
-    }
+
 .lmain li {
   display: inline-block;
   background-color: #1d7871;
@@ -130,24 +128,25 @@ h1 {
   color: #1d7871;
 }
 
-@media screen and (max-width: 450px) {
-      .lmain {
-        top: 150px;
-        }
-    }
-
+#navigation-text{
+  display: inline-block;
+}
+#shownews{
+    display: none;
+}
 .navigation {
   background-color: rgba(255, 255, 255, 1);
   height: auto;
   text-align: center;
   position: fixed;
   left: 0;
-  top: 0;
+  top: 0px;
   z-index: 3000;
   width: 100%;
   border-bottom: 1px outset rgba(0, 0, 0, 0.5);
   /*background-image: -webkit-linear-gradient(#FFD194, #BC1324);*/
 }
+
 
 .navigation ul {
   padding-top: 0;
@@ -184,15 +183,15 @@ h1 {
 .slide-viewer {
       position: absolute; /* needed for IE7 */
       overflow: hidden;
-      height: 600px;
+      height: 640px;
       width: 100%;
-      top: 40px;
+      top: 0px;
       z-index: -2;
     }
 
 .slide-group {
       width: 100%;
-      height: 600px;
+      height: 640px;
       position: fixed;
       z-index: -2;
 
@@ -200,7 +199,7 @@ h1 {
 
 .slide {
       width: 100%;
-      height: 600px;
+      height: 640px;
       display: none;
       position: absolute;
       z-index: -2;
@@ -208,7 +207,7 @@ h1 {
 .slide img {
     min-width: 700px;
     width: 100%;
-    height: 600px;
+    height: 640px;
     z-index: -2;
 
 }
@@ -322,15 +321,6 @@ h1 {
   transition: margin-left .5s;
 }
 
-@media screen and (max-width: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-  .navigation {display: none;}
-  #main {display: inline;}
-  .slide-buttons{
-    top: 568px
-  }
-}
 
 .Shah {
   position: absolute;
@@ -463,6 +453,7 @@ h1 {
   height: 500px;
   background-color: white;
 	padding: 0;
+  text-align: left;
 }
 
 .block h2{
@@ -866,7 +857,7 @@ h1 {
   position: absolute;
   top: 500px;
   width: 100%;
-  height: 500px;
+  height: 825px;
   background-image: url('http://changeactivation.com/wp-content/uploads/2013/11/blurry-walking-around-office-really-blurry.jpg');
   z-index: 6;
   background-size: cover;
@@ -876,7 +867,8 @@ h1 {
 .contact-background h1{
   position: relative;
   display: block;
-  top: 70px;
+  top: 80px;
+  left: 5px;
   width: 410px;
   margin: auto;
   color: #1d7871;
@@ -886,3 +878,317 @@ h1 {
   letter-spacing: .02em;
   font-weight: bold;
 }
+
+.contact-background h2{
+  border-bottom: solid;
+  border-width: 2px;
+  border-color: #8B814C;
+  width: 150px;
+  margin: auto;
+  position: relative;
+  top: 0px;
+}
+
+#f1_container {
+  width: 400px;
+  background-color: #8B814C;
+  position: relative;
+  top: 125px;
+  height: 600px;
+  z-index: 1;
+}
+
+
+.leftcontact{
+  min-width: 400px;
+  height: 600px;
+  transform-style: preserve-3d;
+  transition: all 1.0s linear;
+}
+
+.leftcontact h3{
+  text-align: center;
+  color: white;
+  font-size: 28px;
+  font-family: inherit;
+  letter-spacing: .02em;
+  font-weight: bold;
+  position: relative;
+  top: 40px;
+}
+#contact_title{
+  font-size: 20px;
+  font-family: serif;
+  width: 100%;
+  position: relative;
+  top: 60px;
+  text-align: center;
+  letter-spacing: .02em;
+  font-weight: 300;
+  color: black;
+  opacity: 1;
+}
+
+.leftcontact p{
+  position: relative;
+  top: 40px;
+  text-align: center;
+  margin: auto;
+  color: white;
+  font-size: 12px;
+  font-family: inherit;
+  letter-spacing: .05em;
+  width: 190px;
+  height: 40px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  border-bottom: solid 0.5px;
+  border-color: rgba(255,255,255,0.15);
+}
+.leftcontact ul{
+  position: relative;
+  top: 70px;
+  left: 60px;
+}
+.list li {
+  display: inline-block;
+  color: white;
+  font-size: 14px;
+  font-family: inherit;
+  letter-spacing: .05em;
+}
+#lower {
+  position: relative;
+  top: 50px;
+}
+
+
+.chz-item {
+  width: 400px;
+  height: 600px;
+	position: relative;
+  top: 125px;
+  background-color: #1d7871;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+	cursor: default;
+}
+
+.chz-info-wrap{
+	position: absolute;
+	perspective: 800px;
+  -webkit-perspective: 800px;
+	-moz-perspective: 800px;
+	-o-perspective: 800px;
+	-ms-perspective: 800px;
+  -webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+
+.chz-info{
+	position: absolute;
+  width: 400px;
+  height: 600px;
+	transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+  -webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.chz-info > div {
+	display: block;
+	position: absolute;
+  width: 400px;
+  height: 600px;
+	background-position: center center;
+
+  -webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.chz-info-back h3 {
+  color: white;
+  font-size: 18px;
+  font-family: inherit;
+  letter-spacing: .02em;
+  font-weight: bold;
+  position: relative;
+  top: 0px;
+}
+.chz-info-back{
+  background-color: rgba(0,0,0,.05);
+}
+
+.chz-info-back p{
+  position: relative;
+  top: 00px;
+  color: white;
+  font-size: 9px;
+  font-family: inherit;
+  letter-spacing: .05em;
+  width: 95%;
+  margin-left: 2.5%;
+  height: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.lefthours {
+  text-align: left;
+  position: relative;
+  top: 75px;
+  left: 20px;
+}
+
+.righthours {
+  text-align: right;
+  position: relative;
+  top: -363px;
+  left: -20px;
+  color: #1d7871;
+}
+.righthours p {
+  position: relative;
+  left: -20px;
+  color: black
+}
+
+.righthours h3{
+  color:black;
+}
+.chz-info .chz-info-back {
+  -webkit-transform: rotate3d(0,1,0,180deg);
+	-moz-transform: rotate3d(0,1,0,180deg);
+	-o-transform: rotate3d(0,1,0,180deg);
+	-ms-transform: rotate3d(0,1,0,180deg);
+	transform: rotate3d(0,1,0,180deg);
+}
+
+
+.chz-info p a:hover {
+	color: rgba(255,242,34, 0.8);
+}
+
+
+.chz-item:hover .chz-info {
+  -webkit-transform: rotate3d(0,1,0,-180deg);
+	-moz-transform: rotate3d(0,1,0,-180deg);
+	-o-transform: rotate3d(0,1,0,-180deg);
+	-ms-transform: rotate3d(0,1,0,-180deg);
+	transform: rotate3d(0,1,0,-180deg);
+}
+
+
+.rightcontact{
+  position: relative;
+  left: 400px;
+  width: 80%;
+  top: -475px;
+}
+
+.contact-background {
+  overflow: hidden;
+}
+
+.rightcontact iframe{
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0px;
+}
+
+
+
+.rest {text-align: center;}
+
+@media screen and (max-width: 1050px){
+
+  .Shah img{
+      position: relative;
+      top: -200px;
+      margin-left: 650px;
+      height: 200px;
+      width: 200px;
+    }
+  #block3{margin-top: 20px;}
+  .rest {height: 1155px;}
+  .Services{height: 1200px; top: 2294px;}
+  .Process{top: 3493px }
+  .Contact{top: 3902px}
+}
+
+@media screen and (max-width: 850px){
+  .Shah img{
+      display: none;
+    }
+}
+
+@media screen and (max-width: 700px){
+  .Shah img{
+      display: none;
+    }
+    .Services{height: 1550px; overflow: hidden;}
+    .body {overflow-x: hidden;}
+    .Process{top: 3842px;}
+    .Contact{top: 4240px}
+}
+
+@media screen and (max-width: 642px){
+  .Shah img{
+      display: none;
+    }
+    #block2{position: relative; top:-40px;}
+    #block3{margin-top: 0px;}
+    .rest {height: 1705px;}
+    .Services{height: 1550px; top: 2844px; overflow: hidden;}
+    .body {overflow-x: hidden;}
+    .Process{top: 4392px;}
+    .Contact{top: 4740px}
+}
+
+@media screen and (min-width: 650px) {
+      .lmain p {font-size: 22px ;}
+      .lmain h3 {font-size: 56px;}
+      .lmain p {width: 600px;}
+    }
+
+@media screen and (max-width: 450px) {
+  .lmain {top: 150px;}
+  .sidenav {padding-top: 15px; position: absolute; }
+  .sidenav a {font-size: 18px; }
+  .navigation {display: none;}
+  #main {display: inline; }
+  .slide-buttons{top: 568px;}
+  .Services{height: 2650px}
+  .body {overflow-x: hidden;}
+  .Process{top: 5492px; height: 1500px}
+  .Contact{top: 6490px; width: 450px}
+  .leftcontact {width: 450px;}
+  .services1 #our, .services1 #team {font-size: 36px position: relative; left: 30px;}
+  .services1 #team {position: relative; top: 77px; left: -30px;}
+  .t2 #our{font-size: 36px;}
+  .t2 #our{position: relative; left: 60px}
+  }
+
+  @media screen and (max-width: 520px) {
+    .Shah p {font-size: 14px; width: 400px;}
+    .services1 #our, .services1 #team {font-size: 36px}
+    .services1 #team {position: relative; top: 77px; left: -50px;}
+    .t2 #our{font-size: 36px;}
+    .t2 #our{position: relative; left: 60px}
+    .Services{height: 2650px}
+    .body {overflow-x: hidden;}
+    .Process{top: 5492px; height: 1500px}
+    .Contact{top: 6490px; }
+
+  }
