@@ -63,7 +63,7 @@ h1 {
 
 .lmain h3 {
     text-transform: uppercase;
-    font-family:Montserrat,Arial,sans-serif;
+    font-family: Arial,sans-serif;
     font-weight: bold;
     font-size: 48px;
     color:white;
@@ -360,7 +360,7 @@ h1 {
 #our
 {
   text-transform: uppercase;
-  font-family:Montserrat,Arial,sans-serif;
+  font-family: Arial,sans-serif;
   font-weight:bold;
   font-size: 60px;
   color:black;
@@ -373,7 +373,7 @@ h1 {
 #team
 {
   text-transform: uppercase;
-  font-family: Montserrat,Arial,sans-serif;
+  font-family: Arial,sans-serif;
   font-weight:bold;
   font-size: 60px;
   width: 50%;
@@ -466,7 +466,7 @@ h1 {
   position: relative;
   top: 5px;
   font-size: 24px;
-  font-family: Montserrat,Arial,sans-serif;
+  font-family: Arial,sans-serif;
   margin-left: 15px;
   font-weight: 600;
   color: #1d7871;
@@ -831,7 +831,7 @@ h1 {
   color: white;
   opacity: 1;
   font-size: 20px;
-  font-family: Montserrat,Arial, sans-serif;
+  font-family: Arial, sans-serif;
   letter-spacing: .02em;
   font-weight: bold;
   top: 25px;
@@ -874,7 +874,7 @@ h1 {
   color: #1d7871;
   opacity: 1;
   font-size: 60px;
-  font-family: Montserrat,Arial, sans-serif;
+  font-family: Arial, sans-serif;
   letter-spacing: .02em;
   font-weight: bold;
 }
