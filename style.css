@@ -65,7 +65,7 @@ h1 {
     text-transform: uppercase;
     font-family: Arial,sans-serif;
     font-weight: bold;
-    font-size: 48px;
+    font-size: 46px;
     color:white;
     width: 100%;
     left: -5%;
@@ -90,7 +90,7 @@ h1 {
 }
 
 .lmain p{
-    font-size: 19px;
+    font-size: 17px;
     color: rgba(255,255,255,1.0);
     width: 400px;
     left: -4.5%;
@@ -110,7 +110,7 @@ h1 {
   text-align: center;
   padding-top: 10px;
   width: 180px;
-  height: 40px;
+  height: 30px;
   font-weight: bold;
   font-size: 14px;
   position: relative;
