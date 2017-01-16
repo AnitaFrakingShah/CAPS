@@ -1103,8 +1103,8 @@ h1 {
   overflow: hidden;
 }
 
-.rightcontact img{
-  width: 60%;
+.rightcontact iframe{
+  width: 100%;
   overflow-x: hidden;
   margin: 0px;
 }
