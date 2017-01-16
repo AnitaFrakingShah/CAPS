@@ -345,17 +345,49 @@
 </div>
 </div>
     <div class= "rightcontact">
-	   <iframe crossorigin="anonymous"
+	    <div id="map_canvas"></div>
+	   /*<iframe crossorigin="anonymous"
 		   style="pointer-events:none;" 
 		   src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAhORo4gHQlHig-XipPu5S7qLseB-Pe1gg&q=Space+Needle,Seattle+WA"
 		   width= "600px" 
 		   height="600px"
-		   allowfullscreen></iframe>
+		   allowfullscreen></iframe>*/
 	    
     </div>
   </div>
 </div>
 
+	
+<script type="text/javascript" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAhORo4gHQlHig-XipPu5S7qLseB-Pe1gg&q=Space+Needle,Seattle+WA"></script>
+<script type="text/javascript">
+	function initialize() {
+		var myOptions = {
+			center: new google.maps.LatLng(Latitude,Longitude),
+			zoom: 16,
+			disableDefaultUI: true,
+			zoomControl: true,
+			mapTypeControl: true,
+			zoomControlOptions: {
+				style: google.maps.ZoomControlStyle.LARGE,
+				position: google.maps.ControlPosition.LEFT_CENTER
+			},
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		};
+		var map = new google.maps.Map(document.getElementById("map_canvas"),myOptions);
+		var marker = new google.maps.Marker({
+			position: new google.maps.LatLng(Latitude,Longitude),
+			map: map,
+			title:"Hello World!"
+		});
+		var infowindow = new google.maps.InfoWindow({
+			content:'<div style="font-family: arial,sans-serif;width:290px;color:#000;"><b>XYZ Company</b><div style="font-size:12px;">Data you want to display on marker<br/><br/>Mo. : +0000000000</div></div>',
+		});
+		infowindow.open(map, marker);
+	}
+	 window.onload=initialize;
+</script>
+
+<div id="map_canvas"></div> //Map will display in this div. put it where ever you want to show map.
 
    
 
