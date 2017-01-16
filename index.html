@@ -345,27 +345,15 @@
 </div>
 </div>
     <div class= "rightcontact">
-	    <div id="map_canvas" style="width: 400px; height: 400px;"></div>
+	   <iframe>crossorigin="anonymous"
+		   style="pointer-events:none;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1493.0299059643312!2d-73.0569889433053!3d41.54630217924979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e7c1bb97df3345%3A0xd6d5da32380df4be!2sChild+%26+Adult+Psychiatric+Services!5e0!3m2!1sen!2sca!4v1484372780868" width= "600" height="600"
+     frameborder="0" allowfullscreen</iframe>
     </div>
   </div>
 </div>
 
 
-   <script type='text/javascript' src='//code.jquery.com/jquery-1.9.1.js'></script>
-    <script type='text/javascript' src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-    <script type='text/javascript'>
-        $(function(){
-            var myOptions = {
-                center: new google.maps.LatLng(35.201867,-80.836029),
-                zoom: 10,
-                mapTypeId: google.maps.MapTypeId.ROADMAP
-            };
-            gMap = new google.maps.Map(document.getElementById('map_canvas'), myOptions);
-
-            var kmlLayer = new google.maps.KmlLayer('https://maps.google.com/maps/ms?ie=UTF8&t=m&authuser=0&msa=0&output=kml&msid=212043342089249462794.00048cfeb10fb9d85b995');
-            kmlLayer.setMap(gMap);
-        });
-    </script>
+   
 
 
 
