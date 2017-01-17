@@ -224,7 +224,12 @@ h1 {
     position: relative;
     top: 610px;
     outline: none;
-    z-index: 2000;}
+    z-index: 2000;
+    overflow-x: hidden;
+
+  }
+
+
 
 .slide-btn {
     border: none;
@@ -1103,10 +1108,11 @@ h1 {
   overflow: hidden;
 }
 
-.rightcontact #map-canvas{
+.rightcontact img{
   width: 100%;
+  height: 600px;
+  min-width: 800px;
   overflow-x: hidden;
-  margin: 0px;
 }
 
 
@@ -1180,6 +1186,9 @@ h1 {
   .services1 #team {position: relative; top: 77px; left: -30px;}
   .t2 #our{font-size: 36px;}
   .t2 #our{position: relative; left: 60px}
+  .lmain ul{
+    width: 3750px;
+  }
   }
 
   @media screen and (max-width: 520px) {
@@ -1192,5 +1201,8 @@ h1 {
     .body {overflow-x: hidden;}
     .Process{top: 5492px; height: 1500px}
     .Contact{top: 6490px; }
+    .lmain ul{
+      width: 450px;
+    }
 
   }

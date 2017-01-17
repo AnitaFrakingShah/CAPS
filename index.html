@@ -3,13 +3,15 @@
 
 
 <head>
-  <script type="text/javascript" src="modernizr.custom.79639.js"></script>
+  <script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
+  <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp2/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
 	<script src='script.js'></script>
-  <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp2/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,500,700|Oswald:300,400,700" rel="stylesheet">
 	<link rel='stylesheet' href='style.css' type="text/css"/>
 <style> html, body, #map_canvas { margin: 0; padding: 0; height: 100% } </style>
+
 </head>
 
 <body>
@@ -345,32 +347,11 @@
 </div>
 </div>
     <div class= "rightcontact">
-        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrs4ChUOp5dYxvQIl2T1o7iDBFBxFmkp0&callback=initMap" async defer></script>
-        <div id="map_canvas"></div>
+          <div id="map_canvas"><img src= "/Users/anitashah/Desktop/Screen Shot 2017-01-16 at 4.35.17 PM.png"/></div>
     </div>
   </div>
 </div>
-<script>
-var map;
-var geocoder;
-var mapOptions = { center: {41.546503, -73.055852}, zoom: 2,
-                mapTypeId: google.maps.MapTypeId.ROADMAP };
 
-function initMap() {
-  var myOptions = {
-  center: {41.546503, -73.055852},
-  zoom: 16,
-  mapTypeId: google.maps.MapTypeId.ROADMAP
-  };
-
-  var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
-  new google.maps.Marker({
-          position: new google.maps.LatLng(41.546503, -73.055852),
-          map: map
-      });
-  }
-  google.maps.event.addDomListener(window, 'load', initMap);
-</script>
 
 
     <script>
