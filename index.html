@@ -345,7 +345,7 @@
 </div>
 </div>
     <div class= "rightcontact">
-        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?AIzaSyDrs4ChUOp5dYxvQIl2T1o7iDBFBxFmkp0sensor=false"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrs4ChUOp5dYxvQIl2T1o7iDBFBxFmkp0&callback=initMap" async defer>></script>
         <div id="map_canvas"></div>
     </div>
   </div>
@@ -356,7 +356,7 @@ var geocoder;
 var mapOptions = { center: new google.maps.LatLng(41.546503, -73.055852), zoom: 2,
                 mapTypeId: google.maps.MapTypeId.ROADMAP };
 
-function initialize() {
+function initMap() {
   var myOptions = {
   center: new google.maps.LatLng(41.546503, -73.055852),
   zoom: 16,
@@ -369,7 +369,7 @@ function initialize() {
           map: map
       });
   }
-  google.maps.event.addDomListener(window, 'load', initialize);
+  google.maps.event.addDomListener(window, 'load', initMap);
 </script>
 
 
